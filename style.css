@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f3f3e0; /* Light Cream */
+}
+
+.container {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background-color: #133e87; /* Dark Blue */
+    color: #f3f3e0;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 5px solid #608bc1;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #608bc1; /* Medium Blue */
+    padding: 15px 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f3f3e0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #133e87;
+}
+
+/* About Section */
+.about {
+    background-color: #f3f3e0; /* Light Cream */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem; /* Same size as main title */
+    color: #133e87;
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+/* Projects Section */
+.projects {
+    background-color: #cbdceb; /* Light Blue */
+    padding: 60px 0;
+}
+
+.projects h2 {
+    font-size: 2.5rem; /* Same size as main title */
+    color: #133e87;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.projects .project-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 30%));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #133e87; /* Dark Blue */
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    color: #f3f3e0;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+.project-card p {
+    padding: 0 15px 15px;
+    text-align: justify;
+}
+
+
+/* Skills Section */
+.skills {
+    background-color: #f3f3e0;
+    padding: 60px 0;
+}
+
+.skills h2 {
+    font-size: 2.5rem; /* Same size as main title */
+    color: #133e87;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    background-color: #cbdceb; /* Light blue from your theme */
+    border-radius: 5px;
+    color: #133e87; /* Primary theme color */
+}
+
+.skills-list li i {
+    font-size: 1.5rem;
+    color: #608bc1; /* Accent color */
+}
+
+
+/* Contact Section */
+.contact {
+    background-color: #cbdceb;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem; /* Same size as main title */
+    color: #133e87;
+    margin-bottom: 10px;
+}
+
+
+.contact-info li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #133e87;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #608bc1;
+}
+
+.contact textarea {
+    min-height: 100px; /* Set a minimum height for the textarea */
+    max-height: 100px; /* Set a maximum height for the textarea to keep it fixed */
+    resize: none; /* Prevents resizing */
+    padding: 12px; /* Add padding for better appearance */
+    font-size: 1rem; /* Set the font size */
+    color: #133e87; /* Text color */
+    background-color: #f3f3e0; /* Background color */
+    border: 1px solid #608bc1; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Placeholder styles for input fields and textarea */
+input::placeholder,
+textarea::placeholder {
+    color: #133e87; /* Set the placeholder text color to match the body text */
+    font-family: Arial, sans-serif; /* Match the font family used in the body */
+    font-size: 1rem; /* Match the font size used in the body */
+    opacity: 0.7; /* Optional: make the placeholder text slightly transparent */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #133e87;
+    color: #f3f3e0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Wrapper Styles */
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    background-color: #cbdceb; /* Light Blue */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and Blurb Styles */
+.blurb h2 {
+    font-size: 2.5rem; /* Same size as main title */
+    color: #133e87;
+    margin-bottom: 20px;
+}
+
+.blurb p {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input[type="email"],
+form input[type="text"],
+form textarea {
+    padding: 12px;
+    font-size: 1rem;
+    color: #133e87;
+    background-color: #f3f3e0;
+    border: 1px solid #608bc1;
+    border-radius: 5px;
+}
+
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    padding: 12px;
+    font-size: 1rem;
+    color: #f3f3e0;
+    background-color: #133e87;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #608bc1;
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.more{
+    padding: 10px;
+    background-color: #133e87;
+    border-radius: 5px;
+    color: #f3f3e0;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f3f3e0; /* Light Cream */
+}
+
+.container {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 2.5rem; 
+    color: #133e87;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #cbdceb;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form .form-label {
+    color: #133e87;
+    font-weight: bold;
+}
+
+form .form-control,
+form .form-select {
+    padding: 12px;
+    color: #133e87;
+    background-color: #f3f3e0;
+    border: 1px solid #608bc1;
+    border-radius: 5px;
+}
+
+form .form-control:focus,
+form .form-select:focus {
+    border-color: #133e87;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form button[type="submit"] {
+    padding: 12px;
+    font-size: 1rem;
+    color: #f3f3e0;
+    background-color: #133e87;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #608bc1;
+}
